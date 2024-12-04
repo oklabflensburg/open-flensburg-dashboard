@@ -1,0 +1,25 @@
+{
+    "2015": [
+        {
+            "types": ["Zu Fuss", "Fahrrad", "ÖPNV", "Taxi"],
+            "counts": [88, 49.8, 11.9, 28.2]
+        }
+    ],
+    "2016": [
+
+        {
+
+            "types": ["Zu Fuss", "Fahrrad", "ÖPNV", "Taxi"],
+            "counts": [28.2, 15, 59, 24.6]
+           
+        }
+
+    ],
+    "2017": [
+
+        {
+            "types": ["Zu Fuss", "Fahrrad", "ÖPNV", "Taxi"],
+            "counts": [28.2, 45.6, 70, 23]
+        }
+    ]
+}

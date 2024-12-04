@@ -1,0 +1,29 @@
+{
+  "greenSpaces": {
+    "years": [2019, 2020, 2021, 2022, 2023],
+    "hectares": [520, 535, 550, 575, 590]
+  },
+  "recyclingRate": {
+    "materials": ["Paper", "Plastic", "Glass", "Metal", "Organic"],
+    "percentage": [75, 60, 85, 70, 80]
+  },
+
+  "airquality": {
+    "categories": ["Stickstoffdioxid", "Feinstaub10", "Feinstaub25", "Luftqualitätsindex"],
+    "values": [
+      [10,10,10,4,10,6,5,9,6],
+      [7,4,10,9,10,3,5,5,7,2],
+      [5,4,8,9,2,7,5,5,5,1],
+      [1,1,1,1,0,1,1,0,1,1]
+    ]
+  },
+  "trash": {
+    "categories": ["ver-/bearbeitetes Holz", "Plastik", "Stoffe/Textilien", "Papier/Pappe", "Metall", "Medizinartikel", "Keramik", "Hygieneartikel", "Gummi", "Glas", "Fäkalien"],
+    "values": [25, 25, 25, 25, 25, 50, 25, 25, 25, 25, 25]
+  },
+
+  "water": {
+    "categories": ["Ecoli", "Intest_Enterkokken"],
+    "values": [25, 25, 25, 25, 25, 50, 25, 25, 25, 25, 25]
+  }  
+}

@@ -1,0 +1,11 @@
+{
+  "airQuality": {
+    "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    "pm25": [15, 18, 12, 10, 8, 7, 6, 8, 11, 13, 16, 19],
+    "no2": [25, 28, 22, 20, 18, 15, 14, 16, 19, 21, 24, 27]
+  },
+  "waterQuality": {
+    "locations": ["Harbor", "Beach", "River", "Lake"],
+    "rating": [85, 92, 88, 90]
+  }
+}

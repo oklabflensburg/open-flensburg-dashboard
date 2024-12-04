@@ -1,0 +1,6 @@
+{
+  "trash": {
+    "categories": ["ver-/bearbeitetes Holz", "Plastik", "Stoffe/Textilien", "Papier/Pappe", "Metall", "Medizinartikel", "Keramik", "Hygieneartikel", "Gummi", "Glas", "Fäkalien"],
+    "values": [25, 25, 25, 25, 25, 50, 25, 25, 25, 25, 25]
+  }  
+}

@@ -1,0 +1,10 @@
+{
+  "monthlyConsumption": {
+    "labels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    "data": [320, 302, 301, 334, 290, 230, 210, 220, 182, 191, 234, 290]
+  },
+  "energyMix": {
+    "types": ["Wind", "Solar", "Biogas", "Erdgas"],
+    "percentage": [1320, 38129, 800, 6.05]
+  }
+}

@@ -1,0 +1,11 @@
+{   
+    
+    "dates": ["2024-01-15", "2024-02-01", "2024-03-10", "2024-03-05", "2024-01-14", "2024-01-06", "2024-03-08"],
+    "events": ["Cultural Festival", "Sports Tournament", "City Marathon", "Spring Fair", "Kreativwerkstatt", "Kneipenquiz", "Lesung", "Podiumsdiskussion"],
+    "descriptions": ["Kulturfestival der Stadt Flensburg", "Sportevent um Spenden zu sammeln", "Marathon Lauf an der Küste SH", "Willkommen Frühling", "Werde kreativ in der blau:pause. Wir haben Materialien und Platz, du hast die Kreativität.", "Lerne witzige Sachen über den Dschungel mit deinen Freunden", "Lesung zum Thema Klimawandel", "Podiumsdiskussion zum Thema Antifeminismus, Vortragenede Person: Dr. Luca Büttner"],
+    "locations": ["Innenstadt", "Mürwik Sportverein", "Innenstadt", "Norderstraße", "blau:pause", "Tableau", "Norder 164", "Dänische Bibliothek"],
+    "timeStart": ["10:00", "9:00", "8:00", "11:00", "15:00", "18:00", "20:00", "19:00"],
+    "timeEnd": ["18:00", "14:00", "20:00", "22:00", "18:00", "22:00", "23:00", "21:00"],
+    "imageUrls": ["https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80", "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80", "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80", "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"]
+
+  }
