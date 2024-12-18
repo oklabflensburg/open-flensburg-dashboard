@@ -1,4 +1,5 @@
 import { SolarAPIData, WindAPIData, BiomassAPIData, EnergyMix, NuclearAPIData, CompustionAPIData, WaterAPIData } from "../types/energy";
+import { AirQualityDataAPI } from "../types/environment";
 import { calculateSum } from "./helper";
 
 const energySources = new Map<string, number>();
@@ -156,6 +157,18 @@ export const transformSolarData = (data: SolarAPIData[]): number[] => {
      }
 
   }
+
+  export const transformAirQualityData = (data: AirQualityDataAPI[]): number[] => {
+    
+  
+    data.forEach(entry => {
+      //solarUnitsNett.push(entry.net_nominal_capacity)
+    })
+
+  
+    return []
+      
+  };
 
 
 
