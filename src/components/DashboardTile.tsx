@@ -12,7 +12,7 @@ interface DashboardTileProps {
 
 const DashboardTile: React.FC<DashboardTileProps> = ({ title, description, bgColor, fontColor, themeIconUrl, option, children }) => {
     return (
-        <div className={`${bgColor} m-16 p-8 rounded flex-col`}>
+        <div className={`${bgColor} m-16 p-8 w-full rounded flex-col`}>
             <img className="h-[45px] float-right" src={themeIconUrl} alt="themeicondescription" />
             <div className='flex flex-col items-center md:flex-row'>
                 <div className="float-left flex flex-col justify-between p-4 leading-normal">
