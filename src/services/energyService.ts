@@ -81,8 +81,10 @@ export const fetchWindData = async (): Promise<WindAPIData[]> => {
         }
         return await response.json();
       } catch (error) {
-        console.error('Failed to fetch energy data:', error);
-        throw error;
+        console.error(`Failed to fetch ${energy_unit} data:`, error);
+        return [];
+        //throw error;
+       
       }
   };
 

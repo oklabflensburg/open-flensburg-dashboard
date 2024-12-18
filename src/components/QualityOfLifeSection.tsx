@@ -83,25 +83,6 @@ const QualityOfLifeSection: React.FC = () => {
 
   const averageSatisfaction = data ? calculateAverage(data.satisfaction.scores) : 0;
 
- const prepareTrafficData = (trafficData) => {
-
-  return Object.keys(trafficData).forEach((key) => {
-    console.log(`${key}: ${trafficData[key][0].types}, ${trafficData[key][0].counts}`)
-
-  })
-
-    };
-     
-
-
-
-const mobility = mobilityData ? prepareTrafficData(mobilityData) : [];
-//console.log(mobilityData?.mobility.years)
-
-console.log("MOBILITY")
-console.log(mobility)
-
-
   const trafficOption = {
     title: { 
     },
@@ -122,7 +103,7 @@ console.log(mobility)
     },
     yAxis: {
       type: 'category',
-      data: [""],
+      data: mobilityData?.types,
       axisLabel: {
         interval: 0
       }
@@ -130,7 +111,9 @@ console.log(mobility)
     series: [
       {
         type: 'bar',
-        data: [0,2,1,6,5],
+        data: mobilityData?.counts.map((type, index) => ({
+          value: mobilityData.counts[index]
+        })),
         itemStyle: {
           color: function(params: any) {
             const colors = ['#FD605F', '#FD605F', '#FD605F', '#FD605F', '#FD605F', '#FD605F'];
@@ -145,24 +128,6 @@ console.log(mobility)
       }
     ]
   };
-
-
- /* // Filter events for current month
-  const yearMobility = mobilityData?.mobility.filter(event => {
-    const mobilityYear = parse(event.year, 'yyyy-MM-dd', new Date());
-    return isWithinInterval(mobilityYear, {
-        start: startOfMonth(currentMonth),
-        end: endOfMonth(currentMonth)
-    });
-});*/
-
-const navigateMonth = (direction: 'prev' | 'next') => {
-    setCurrentMonth(prevMonth => {
-        const newMonth = new Date(prevMonth);
-        newMonth.setMonth(prevMonth.getMonth() + (direction === 'next' ? 1 : -1));
-        return newMonth;
-    });
-};
 
 
   return (

@@ -14,8 +14,6 @@ export interface QualityOfLifeData {
   }
 
 export interface Mobility {   
-    year: {
       types: string[],
       counts: number[]
-  }
 }

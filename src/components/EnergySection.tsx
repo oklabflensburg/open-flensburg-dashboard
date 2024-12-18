@@ -43,7 +43,6 @@ const calculateHouseholdSupply = (capacityValues: number[], capacityFactor: numb
 };
 
 
-
 const EnergySection: React.FC = () => {
   const [data, setData] = useState<EnergyData | null>(null);
   const [isLoading, setIsLoading] = useState(true);

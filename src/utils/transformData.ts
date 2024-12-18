@@ -8,19 +8,21 @@ export const transformSolarData = (data: SolarAPIData[]): number[] => {
     //unit kw
     const solarUnitsNett = new Array<number>;
     let currentSourceCapacity = 0;
+
+    if(data.length > 0){
   
-    data.forEach(entry => {
-      solarUnitsNett.push(entry.net_nominal_capacity)
-    })
+      data.forEach(entry => {
+        solarUnitsNett.push(entry.net_nominal_capacity)
+      })
 
-    currentSourceCapacity = calculateSum(solarUnitsNett)
+      currentSourceCapacity = calculateSum(solarUnitsNett)
 
-    data.forEach(entry => {
-      energySources.get(entry.energy_source) || 0;
-      energySources.set(entry.energy_source, currentSourceCapacity);
-    })
+      data.forEach(entry => {
+        energySources.get(entry.energy_source) || 0;
+        energySources.set(entry.energy_source, currentSourceCapacity);
+      })
 
-   
+    }
 
     return solarUnitsNett
       
@@ -130,15 +132,15 @@ export const transformSolarData = (data: SolarAPIData[]): number[] => {
 };
 
   export const getEnergyMix = (): EnergyMix => {
-
+  
     let overallCapacitiy = new Array<number>;
 
     Array.from(energySources.entries()).map(([source, capacity]) => (
       overallCapacitiy.push(capacity)
     ));
 
-    totalCapacity = calculateSum(overallCapacitiy);
 
+    totalCapacity = calculateSum(overallCapacitiy);
 
     // calculate percentage
     const energyMixData = Array.from(energySources.entries()).map(([source, capacity]) => ({
